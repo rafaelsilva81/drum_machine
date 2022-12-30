@@ -40,7 +40,7 @@ export default function Home() {
       >
         <div className="flex flex-row flex-wrap items-center p-2 bg-white rounded-md justify-centerp-2">
           {tiles.map((tile) => (
-            <AudioTile tile={tile} volume={globalVolume} />
+            <AudioTile key={tile} tile={tile} volume={globalVolume} />
           ))}
         </div>
 
